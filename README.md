@@ -27,6 +27,11 @@ j = 匹配字符串长度，return i + 1 - 字符串长度
 
 ●459.重复的子字符串
 
+ 两种做法：
+
+ 1. s+s 然后去头去尾，如果新的String还contains s，那return true
+
+ 2. 先求next数组，然后用长度 module 长度减去最长相等前后缀（next[len - 1]），如果是0代表return true
 
 ●字符串总结 
 
